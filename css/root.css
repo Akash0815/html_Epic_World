@@ -1,0 +1,54 @@
+ :root {
+      --gradientColor: linear-gradient(90deg, #28F19C 0%, #00B2E3 100%);
+      --newGradientColor:linear-gradient(90deg, #FFFFFF 0%, #999999 100%);
+      --textPrimaryColor:#fff;
+      --backgroundColor:#0d1413;
+      --graphShadow:0 0 20px rgba(0,255,225,0.5);
+      --arrowBackgeound: #424342;
+      --arrowBorder:1px solid #999292;
+      --borderTop:1px solid #e2dede;
+      --borderBottom:#fff;
+      --textSecoundaryColor:#00FFE1;
+      --textColor:#666;
+      --lineGradient:linear-gradient(90deg, #ffffff 0%, rgba(153, 153, 153, 0) 100%);
+    }
+
+
+
+    #preloader {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.89);
+    transition: all 0.6s ease-out;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  #preloader:before,
+  #preloader:after {
+    content: "";
+    position: absolute;
+    border: 4px solid #102660;
+    border-radius: 50%;
+    -webkit-animation: animate-preloader 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    animation: animate-preloader 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  
+  #preloader:after {
+    -webkit-animation-delay: -0.5s;
+    animation-delay: -0.5s;
+  }
+  .preloader-wrapper {
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    z-index: 99999999 !important;
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .preloader-icon{width:200px;height:auto}

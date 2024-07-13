@@ -148,12 +148,18 @@ ul {
   }
 
   /* heroSection */
-
+.aboutEpic{
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 24px;
+    color:var(--textPrimaryColor);
+}
   .hero-section {
     background-color: #0A1512;
     background-size: cover;
     background-position: center;
     padding: 80px 0;
+    margin-top: 40px;
 }
 .wrapper{
     margin-block:40px!important;
